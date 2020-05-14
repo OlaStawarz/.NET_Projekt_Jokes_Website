@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Wyświetlanie żartów";
+}
+
+@ViewBag.message
+
+<br />
+<br />
+@if (ViewBag.result == 0)
+{
+    <a asp-area="" asp-controller="Api" asp-action="Index">
+        <button>Powrót do wyszukiwarki</button>
+    </a>
+}
+
+
+@foreach (string joke in ViewBag.model)
+{
+    @joke
+    <br />
+
+}
+
+
+

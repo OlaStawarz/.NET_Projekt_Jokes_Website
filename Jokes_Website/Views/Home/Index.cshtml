@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@{
+    ViewData["Title"] = "Strona startowa";
+}
+
+
+<br />
+<div class="text-center">
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <p>Przejdź do przeglądarki żartów:</p>
+        <a asp-area="" asp-controller="Api" asp-action="Index">
+            <button>Przejdź do wyszukiwarki</button>
+        </a>
+    }
+    else
+    {
+
+        <h1 class="display-4">Witaj na naszej stronie!</h1>
+        <p1>Aby przeglądać żarty zarejestruj się!</p1>
+        <p1>Masz już konto? Zaloguj się!</p1>
+   
+    }
+
+</div>

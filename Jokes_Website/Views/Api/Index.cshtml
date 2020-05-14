@@ -1,0 +1,28 @@
+﻿@model JokeModel
+
+<h1>Witaj w przeglądarce żartów!</h1>
+<p>Jeśli chcesz wyszukać żart wpisz interesujące Cię słowo:</p>
+
+@using (Html.BeginForm("DisplayJokes", "Api"))
+{
+    <input type="text" name="word" />
+    <input type="submit" value="Search" />
+}
+
+<br />
+<br />
+<p>Przykładowy żart:</p>
+<div class="text-left">
+    @foreach (var joke in Model.Joke)
+    {
+        @joke
+
+    }
+</div>
+
+
+
+
+
+
+
