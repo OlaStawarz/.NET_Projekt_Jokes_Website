@@ -33,7 +33,7 @@ realizacja konta użytkownika. Dodanie opcji "dodaj do ulubionych" oraz przekazy
 ### Dokumentacja projektu:
 ### Realizacja projektu - login oraz rejestracja: 
 1. Rejestracja użytkownika: <br/>
-![Rejestracja użytkownika](https://raw.githubusercontent.com/jagodakubacka/.NET_Projekt/master/Images/rejestracja.png) <br/>
+![Rejestracja użytkownika](Images/rejestracja.png) <br/>
 Rejestracja wymaga pdoania takich danych jak: 
 - pierwsze imię
 - nazwisko
