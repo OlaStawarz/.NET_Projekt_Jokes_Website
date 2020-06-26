@@ -5,7 +5,6 @@ Projekt z przedmiotu platf. program. .NET i Java, z zakresu .NET.
 * [Wprowadzenie](#wprowadzenie)
 * [Podział zadań](#podział-zadań)
 * [Technologie](#technologie)
-* [Dokumnetacja projetktu](#dokumentacja-projektu)
 
 ### Wprowadzenie: 
 - Wybrana technologia: <br/>
@@ -30,37 +29,4 @@ realizacja konta użytkownika. Dodanie opcji "dodaj do ulubionych" oraz przekazy
 * User Interface (komunikacja z użytkownikiem)
 * Wykorzystanie zewnętrznych bibliotek (korzystając z pakietu NuGet)
 
-### Dokumentacja projektu:
-### Realizacja projektu - login oraz rejestracja: 
-1. Rejestracja użytkownika: <br/>
-![Rejestracja użytkownika](Images/rejestracja.png) <br/>
-Rejestracja wymaga pdoania takich danych jak: 
-- pierwsze imię
-- nazwisko
-- e-mail
-- hasło <br/>
-Email oraz hasło są wymagane oraz sprawdzane. Email musi mieć odpowiednią formę, tzn. posiadać "@". Hasło musi mieć odpowiednią trudność, m.in. liczby, duża i mała litera, odpowiednia długość. 
-
-2. Login użytkownika: <br/>
-![Login użytkownika](Images/login.png)<br/>
-Login wymaga podania takich danych, jak:
-- e-mail
-- hasło <br/>
-Email oraz hasło są obowiązkowe.
-
-3. Użytkownik: <br/>
-![Użytkownik](Images/uzytkownik.png)<br/>
-
-4. Baza danych: <br/>
-![Baza danych](Images/db.png)<br/>
-  
-5. Wylogowanie: <br/>
-![Wylogowanie](Images/wyloguj.png)<br/>
-Po uruchomieniu logujemy się pomyślnie. Następnie klikamy, by się wylogować, a plik cookiezostanie usunięty.
-
-### Realizacja projektu - API:
-1. Konfiguracja:<br/>
-Inicjalizacja klienta oraz przypisanie adresu bazowego odbywa się w pliku Startup.cs <br/>
-![Inicjalizacja](Images/klient.PNG)<br/>
-Utworzenie klienta odbywa się w kontrolerze (ApiController.cs).<br/>
 
